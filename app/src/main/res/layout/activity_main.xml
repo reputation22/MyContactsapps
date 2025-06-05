@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginTop="130dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:textColor="#343965"
+                    android:textStyle="bold"
+                    android:text="通讯录"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#ECF2FF"
+                    >
+
+                        <EditText
+                            android:id="@+id/et_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="username"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="14sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#ECF2FF"
+                    >
+
+                        <EditText
+                            android:id="@+id/et_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="phonenumber"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textSize="14sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="#585CE5"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                        <Button
+                            android:id="@+id/bth_add"
+                            android:text="添加"
+                            android:background="#585CE5"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#585CE5"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                        <Button
+                            android:id="@+id/bth_delete"
+                            android:text="删除"
+                            android:background="#585CE5"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#585CE5"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                        <Button
+                            android:id="@+id/bth_query"
+                            android:text="查看"
+                            android:background="#585CE5"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#585CE5"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                        <Button
+                            android:id="@+id/bth_update"
+                            android:text="修改"
+                            android:background="#585CE5"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询数据"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
